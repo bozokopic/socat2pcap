@@ -25,7 +25,7 @@ Running
 
 ::
 
-    $ socat2pcap
+    $ socat2pcap --help
 
 
 License
