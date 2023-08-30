@@ -1,0 +1,28 @@
+[project]
+name = "socat2pcap"
+version = "0.1.0"
+description = "Socat log to pcap converter"
+readme = "README.rst"
+requires-python = ">=3.10"
+license = {text = "GPLv3"}
+authors = [
+    {name = "Bozo Kopic", email = "bozo@kopic.xyz"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)"
+]
+
+[project.scripts]
+socat2pcap = "socat2pcap.main:main"
+
+[project.urls]
+Repository = "https://github.com/bozokopic/socat2pcap.git"
+
+[build-system]
+build-backend = "mkwhl"
+requires = ["mkwhl ~=0.2.4"]
+
+[tool.mkwhl]
+src-dir = '.'
+src-include-patterns = ["socat2pcap/**/*"]
