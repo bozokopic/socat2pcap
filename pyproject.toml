@@ -19,9 +19,12 @@ socat2pcap = "socat2pcap.main:main"
 [project.urls]
 Repository = "https://github.com/bozokopic/socat2pcap.git"
 
+[project.optional-dependencies]
+dev = ["mkwhl ~=0.2.6"]
+
 [build-system]
 build-backend = "mkwhl"
-requires = ["mkwhl ~=0.2.4"]
+requires = ["mkwhl ~=0.2.6"]
 
 [tool.mkwhl]
 src-dir = '.'
